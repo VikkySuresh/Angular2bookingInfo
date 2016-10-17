@@ -21,7 +21,7 @@ export class UpperCaseText {
 @Component({    
     selector: 'my-app',   
     templateUrl:'./app/app.checkin.component.html',
-    styleUrls:['./app/app.checkinform.styles.css']
+    styleUrls:['./app/css/app.checkinform.styles.css']
 
 })
 export class CheckInFormComponent implements OnInit{

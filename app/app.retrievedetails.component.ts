@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
             	 <a href="#" class="close" [routerLink]="['/']" aria-label="close">&times;</a>
   				<strong>Success! Booking is Confirmed.</strong>
   			 </div>`,
-  styleUrls:['./app/app.retrieveform.styles.css']
+  styleUrls:['./app/css/app.retrieveform.styles.css']
 })
 
 // Component class
