@@ -1,3 +1,4 @@
+//Unit test cases for check in Application 
 import { CheckInFormComponent } from './app.checkinform.component';
 import { DisplayNavbarComponent } from './app.displaynavbar.component';
 import { TestBed } from '@angular/core/testing';

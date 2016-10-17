@@ -1,4 +1,4 @@
-
+//Reactive form Component with Validation Logic
 import { Component,Directive,OnInit, ElementRef} from '@angular/core';
 import { FormGroup,FormBuilder, Validators } from '@angular/forms';
 import { CheckIn } from './app.checkinform.interface';

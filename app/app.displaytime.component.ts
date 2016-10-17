@@ -1,3 +1,4 @@
+// component to display time on webpage
 import {Component, Attribute} from '@angular/core';
 
 @Component({
