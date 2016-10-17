@@ -27,7 +27,6 @@ export class UpperCaseText {
 export class CheckInFormComponent implements OnInit{
     public checkinForm: FormGroup;
     public submitted: boolean;
-    public events: any[] = [];
     constructor(private formBuilder: FormBuilder){}
 
   

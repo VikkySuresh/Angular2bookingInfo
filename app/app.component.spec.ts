@@ -1,30 +1,20 @@
 import { CheckInFormComponent } from './app.checkinform.component';
 import { DisplayNavbarComponent } from './app.displaynavbar.component';
-import { DisplayTimeComponent } from './app.displaytime.component';
-import { TestBed }      from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 import {  FormBuilder, Validators } from '@angular/forms';
-import { By }           from '@angular/platform-browser';
+import { By } from '@angular/platform-browser';
 
-
-
-/// Delete this
-describe('Smoke test', () => {
-  it('should run a passing test', () => {
-    expect(true).toEqual(true, 'should pass');
-  });
-});
 
 describe('Check if all Components are  defined', () => {
 let checkincomponent:CheckInFormComponent;
 let navbarcomponent:DisplayNavbarComponent;
 let formBuilder:FormBuilder;
-let timecomponent:DisplayTimeComponent;
+
 
  beforeEach(() => {
        formBuilder = new FormBuilder();
        checkincomponent = new CheckInFormComponent(formBuilder);
        navbarcomponent = new DisplayNavbarComponent();
-       timecomponent = new DisplayTimeComponent();
        
        
     });
@@ -37,7 +27,7 @@ let timecomponent:DisplayTimeComponent;
         expect(navbarcomponent).toBeDefined();
     });
 
-    it('Should be invalid to submit' , () => {
+    it('Should not allow to submit ' , () => {
       
         checkincomponent.checkinForm = formBuilder.group({
             bookingcode: ['', Validators.required],
@@ -46,7 +36,7 @@ let timecomponent:DisplayTimeComponent;
         expect(checkincomponent.checkinForm.valid).toBe(false);
 
     });
-     it('should be a invalid for submission' , () => {
+     it('Should not allow to submit even if any field is invalid' , () => {
       
         checkincomponent.checkinForm = formBuilder.group({
             bookingcode: ['', Validators.required],
@@ -54,7 +44,7 @@ let timecomponent:DisplayTimeComponent;
          });
         expect(checkincomponent.checkinForm.valid).toBe(false);
     });
-        it('should be  a valid form' , () => {    
+        it('should allow user to submit' , () => {    
          checkincomponent.checkinForm = formBuilder.group({
             bookingcode: ['HJSDE', Validators.required],
             familyname: ['Suresh', Validators.required],
