@@ -8,6 +8,9 @@ div.container{
 h3{
   text-align:center;color:#ffffff; font-weight:solid
 }
+.text-danger{
+  color:red;
+}
  .horizontal{
   border-top:3px solid #16498B;
   width:30px;
