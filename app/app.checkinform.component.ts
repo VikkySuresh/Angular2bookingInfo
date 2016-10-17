@@ -30,11 +30,7 @@ export class CheckInFormComponent implements OnInit{
     public events: any[] = [];
     constructor(private formBuilder: FormBuilder){}
 
-    onSubmit(bookingcode:string,familyname:string)
-  {
-   console.log("Hello");
   
-  }
 ngOnInit() {
 
     this.checkinForm =  this.formBuilder.group({
