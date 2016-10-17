@@ -39,15 +39,8 @@ ngOnInit() {
       
         
     });
-    this.subcribeToFormChanges();
+    
 
 }
- subcribeToFormChanges() {
-        const myFormStatusChanges$ = this.checkinForm.statusChanges;
-        const myFormValueChanges$ = this.checkinForm.valueChanges;
-        
-        myFormStatusChanges$.subscribe(x => this.events.push({ event: 'STATUS_CHANGED', object: x }));
-        myFormValueChanges$.subscribe(x => this.events.push({ event: 'VALUE_CHANGED', object: x }));
-    }
 
 }
