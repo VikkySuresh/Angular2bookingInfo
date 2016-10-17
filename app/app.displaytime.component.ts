@@ -1,4 +1,3 @@
-//our root app component
 import {Component, Attribute} from '@angular/core';
 
 @Component({

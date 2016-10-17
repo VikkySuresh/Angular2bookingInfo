@@ -17,9 +17,6 @@ import { Component } from '@angular/core';
 </nav>`
 })
 
-export class DisplayNavbarComponent {
- 
- 
-  }
+export class DisplayNavbarComponent {}
   
 
