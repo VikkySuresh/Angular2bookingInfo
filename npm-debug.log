@@ -1,0 +1,53 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\vikky\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'e2e' ]
+2 info using npm@3.10.8
+3 info using node@v4.6.0
+4 verbose run-script [ 'pree2e', 'e2e', 'poste2e' ]
+5 info lifecycle checkin-application@1.0.0~pree2e: checkin-application@1.0.0
+6 verbose lifecycle checkin-application@1.0.0~pree2e: unsafe-perm in lifecycle true
+7 verbose lifecycle checkin-application@1.0.0~pree2e: PATH: C:\Users\vikky\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;F:\checkinApp\node_modules\.bin;C:\Users\vikky\bin;C:\Program Files\Git\mingw32\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw32\bin;C:\Program Files\Git\usr\bin;C:\Users\vikky\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Skype\Phone;C:\Program Files\nodejs;C:\Users\vikky\AppData\Local\Microsoft\WindowsApps;C:\Users\vikky\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+8 verbose lifecycle checkin-application@1.0.0~pree2e: CWD: F:\checkinApp
+9 silly lifecycle checkin-application@1.0.0~pree2e: Args: [ '/d /s /c', 'npm run webdriver:update' ]
+10 silly lifecycle checkin-application@1.0.0~pree2e: Returned: code: 0  signal: null
+11 info lifecycle checkin-application@1.0.0~e2e: checkin-application@1.0.0
+12 verbose lifecycle checkin-application@1.0.0~e2e: unsafe-perm in lifecycle true
+13 verbose lifecycle checkin-application@1.0.0~e2e: PATH: C:\Users\vikky\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;F:\checkinApp\node_modules\.bin;C:\Users\vikky\bin;C:\Program Files\Git\mingw32\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw32\bin;C:\Program Files\Git\usr\bin;C:\Users\vikky\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Skype\Phone;C:\Program Files\nodejs;C:\Users\vikky\AppData\Local\Microsoft\WindowsApps;C:\Users\vikky\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+14 verbose lifecycle checkin-application@1.0.0~e2e: CWD: F:\checkinApp
+15 silly lifecycle checkin-application@1.0.0~e2e: Args: [ '/d /s /c',
+15 silly lifecycle   'tsc && concurrently "http-server -s" "protractor protractor.config.js" --kill-others --success first' ]
+16 silly lifecycle checkin-application@1.0.0~e2e: Returned: code: 1  signal: null
+17 info lifecycle checkin-application@1.0.0~e2e: Failed to exec e2e script
+18 verbose stack Error: checkin-application@1.0.0 e2e: `tsc && concurrently "http-server -s" "protractor protractor.config.js" --kill-others --success first`
+18 verbose stack Exit status 1
+18 verbose stack     at EventEmitter.<anonymous> (C:\Users\vikky\AppData\Roaming\npm\node_modules\npm\lib\utils\lifecycle.js:255:16)
+18 verbose stack     at emitTwo (events.js:87:13)
+18 verbose stack     at EventEmitter.emit (events.js:172:7)
+18 verbose stack     at ChildProcess.<anonymous> (C:\Users\vikky\AppData\Roaming\npm\node_modules\npm\lib\utils\spawn.js:40:14)
+18 verbose stack     at emitTwo (events.js:87:13)
+18 verbose stack     at ChildProcess.emit (events.js:172:7)
+18 verbose stack     at maybeClose (internal/child_process.js:829:16)
+18 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+19 verbose pkgid checkin-application@1.0.0
+20 verbose cwd F:\checkinApp
+21 error Windows_NT 10.0.14393
+22 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\vikky\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "run" "e2e"
+23 error node v4.6.0
+24 error npm  v3.10.8
+25 error code ELIFECYCLE
+26 error checkin-application@1.0.0 e2e: `tsc && concurrently "http-server -s" "protractor protractor.config.js" --kill-others --success first`
+26 error Exit status 1
+27 error Failed at the checkin-application@1.0.0 e2e script 'tsc && concurrently "http-server -s" "protractor protractor.config.js" --kill-others --success first'.
+27 error Make sure you have the latest version of node.js and npm installed.
+27 error If you do, this is most likely a problem with the checkin-application package,
+27 error not with npm itself.
+27 error Tell the author that this fails on your system:
+27 error     tsc && concurrently "http-server -s" "protractor protractor.config.js" --kill-others --success first
+27 error You can get information on how to open an issue for this project with:
+27 error     npm bugs checkin-application
+27 error Or if that isn't available, you can get their info via:
+27 error     npm owner ls checkin-application
+27 error There is likely additional logging output above.
+28 verbose exit [ 1, true ]

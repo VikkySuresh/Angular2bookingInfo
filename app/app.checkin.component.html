@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="panel">
+      		<div class="panel-heading">
+      				<h3>CHECK-IN</h3>
+      		</div>
+      		<div class="panel-body">
+      			<h3><b> RETRIEVE YOUR BOOKING</b></h3>
+            <hr class="horizontal">
+      			<p>	You can find your booking by filling out your family name and Booking code in your booking confirmation.</p>      			
+      			<form [formGroup]="checkinForm" class="form" novalidate autocomplete="off">
+   						 <div class="form-group" >
+     						 <label for="bookingcode">Booking code</label>     						
+     						 <input name="bookingcode" formControlName = "bookingcode" class="form-control"  #input (input)="input.value=$event.target.value.
+     						 toUpperCase()" >  
+                  <small [hidden]="checkinForm.controls.bookingcode.valid || (checkinForm.controls.bookingcode.pristine && !submitted)" class="text-danger">
+                     Booking ID is Required
+                 </small>
+   						 </div>
+
+   						 <div class="form-group">
+     						 <label for="familyname">Family name
+                 </label>		
+                 <input name="familyname" formControlName = "familyname" class="form-control" >
+                 <small [hidden]="checkinForm.controls.familyname.valid || (checkinForm.controls.familyname.pristine && !submitted)" class="text-danger">
+                     Family Name is Required
+                 </small>
+               </div>	   				  
+   						 <button class ="btn col-xs-12 retrieve_booking " id = "retrieve_booking" type="submit" [disabled]="!checkinForm.valid" [routerLink]="['/retrievedetails']">Retrieve booking</button>  
+  				</form>
+      		</div>
+   		</div>
+		</div>
