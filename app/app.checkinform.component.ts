@@ -14,7 +14,7 @@ export class UpperCaseText {
     }
 }
 @Component({    
-    selector: 'my-app',   
+    selector: 'checkin-app',   
     templateUrl:'./app/view/app.checkin.component.html',
     styleUrls:['./app/css/app.checkinform.styles.css']
 

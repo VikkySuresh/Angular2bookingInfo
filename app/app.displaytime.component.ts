@@ -1,13 +1,13 @@
 // component to display time on webpage
-import {Component, Attribute} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'time-component',
   template: `
       <div class="container">
         <div align ="right">
-          {{date | date:'dd-MMM-yyyy HH:mm:ss'}}
-        </div>
+          {{date | date:'medium'}}
+        </div></div>
     `
 })
 export class DisplayTimeComponent {
